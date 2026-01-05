@@ -1,26 +1,53 @@
 @import "tailwindcss";
-
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@plugin "daisyui" {
+  themes: contractor --default, dark;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+@theme {
+  --font-sans: "Plus Jakarta Sans", system-ui, sans-serif;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
+/* Custom DaisyUI Theme: Contractor - Earthy Browns, Beiges & Greens */
+@plugin "daisyui/theme" {
+  name: "contractor";
+  default: true;
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  /* Base colors - warm cream/off-white */
+  --color-base-100: oklch(96% 0.012 85);
+  --color-base-200: oklch(92% 0.018 80);
+  --color-base-300: oklch(87% 0.025 75);
+  --color-base-content: oklch(25% 0.025 50);
+
+  /* Primary - rich walnut brown */
+  --color-primary: oklch(38% 0.08 55);
+  --color-primary-content: oklch(97% 0.01 85);
+
+  /* Secondary - warm sand/tan */
+  --color-secondary: oklch(75% 0.06 70);
+  --color-secondary-content: oklch(25% 0.04 55);
+
+  /* Accent - forest green */
+  --color-accent: oklch(45% 0.12 145);
+  --color-accent-content: oklch(97% 0.01 145);
+
+  /* Neutral - dark charcoal brown */
+  --color-neutral: oklch(28% 0.03 55);
+  --color-neutral-content: oklch(95% 0.01 85);
+
+  /* Status colors */
+  --color-info: oklch(55% 0.12 230);
+  --color-info-content: oklch(97% 0.01 230);
+
+  --color-success: oklch(50% 0.14 145);
+  --color-success-content: oklch(97% 0.01 145);
+
+  --color-warning: oklch(72% 0.14 70);
+  --color-warning-content: oklch(25% 0.04 70);
+
+  --color-error: oklch(50% 0.18 25);
+  --color-error-content: oklch(97% 0.01 25);
+
+  --radius-selector: 0.375rem;
+  --radius-field: 0.375rem;
+  --radius-box: 0.5rem;
 }
