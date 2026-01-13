@@ -3,7 +3,6 @@ import Link from "next/link";
 import {
   HiMapPin,
   HiArrowRight,
-  HiCheckCircle,
   HiPhone,
   HiChevronRight,
 } from "react-icons/hi2";
@@ -17,6 +16,25 @@ import {
 } from "react-icons/lu";
 import { featuredImages, projects } from "@/data";
 import HeroCarousel from "@/components/HeroCarousel";
+
+export const metadata = {
+  title: "General Contractor in Vaughan, Ontario",
+  description:
+    "BMJ Contracting is a general contractor serving Vaughan & the GTA. Renovations, kitchens, bathrooms, basements, and commercial construction.",
+  alternates: { canonical: "/" },
+  openGraph: {
+    title: "General Contractor in Vaughan, Ontario",
+    description:
+      "BMJ Contracting is a general contractor serving Vaughan & the GTA. Renovations, kitchens, bathrooms, basements, and commercial construction.",
+    images: [{ url: "/bmj_logo.png", alt: "BMJ Contracting logo" }],
+  },
+  twitter: {
+    title: "General Contractor in Vaughan, Ontario",
+    description:
+      "BMJ Contracting is a general contractor serving Vaughan & the GTA. Renovations, kitchens, bathrooms, basements, and commercial construction.",
+    images: ["/bmj_logo.png"],
+  },
+};
 
 // Service card data
 const services = [
@@ -75,8 +93,7 @@ export default function Home() {
                 Serving Vaughan & the GTA
               </div>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-base-content leading-tight mb-6">
-                General Contractor in{" "}
-                <span className="text-primary">Vaughan, Ontario</span>
+                BMJ General Contracting
               </h1>
               <p className="text-lg lg:text-xl text-base-content/70 mb-8 max-w-xl leading-relaxed">
                 From complete home renovations and commercial projects — we
@@ -88,7 +105,7 @@ export default function Home() {
                   href="mailto:info@bmjcontracting.ca?subject=Quote Request"
                   className="btn btn-primary btn-lg"
                 >
-                  Request a Quote
+                  Email Inquiry
                   <HiArrowRight className="w-5 h-5" />
                 </a>
                 <Link href="/projects" className="btn btn-outline btn-lg">

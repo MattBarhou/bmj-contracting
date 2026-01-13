@@ -100,18 +100,33 @@ export const services = [
 // Featured images for home page carousel
 export const featuredImages = [
   {
-    src: "/featured-images/IMG_8942.PNG",
-    alt: "Elegant foyer with decorative tile",
+    src: "/featured-images/PHOTO-2026-01-07-20-03-30.jpg",
+    alt: "Featured project",
   },
-  { src: "/featured-images/IMG_8943.PNG", alt: "Featured project" },
-  { src: "/featured-images/IMG_8944.PNG", alt: "Featured project" },
-  { src: "/featured-images/IMG_8945.PNG", alt: "Modern kitchen renovation" },
-  { src: "/featured-images/IMG_8946.PNG", alt: "Featured project" },
-  { src: "/featured-images/IMG_8947.PNG", alt: "Featured project" },
-  { src: "/featured-images/IMG_8948.PNG", alt: "Featured project" },
-  { src: "/featured-images/IMG_8949.PNG", alt: "Featured project" },
-  { src: "/featured-images/IMG_8950.PNG", alt: "Featured project" },
-  { src: "/featured-images/IMG_8951.PNG", alt: "Featured project" },
+  {
+    src: "/featured-images/PHOTO-2026-01-07-20-03-30%202.jpg",
+    alt: "Featured project",
+  },
+  {
+    src: "/featured-images/PHOTO-2026-01-07-20-03-30%203.jpg",
+    alt: "Featured project",
+  },
+  {
+    src: "/featured-images/PHOTO-2026-01-07-20-03-30%204.jpg",
+    alt: "Featured project",
+  },
+  {
+    src: "/featured-images/PHOTO-2026-01-07-20-03-30%205.jpg",
+    alt: "Featured project",
+  },
+  {
+    src: "/featured-images/PHOTO-2026-01-07-20-03-30%206.jpg",
+    alt: "Featured project",
+  },
+  {
+    src: "/featured-images/PHOTO-2026-01-07-20-03-30%207.jpg",
+    alt: "Featured project",
+  },
 ];
 
 // Projects organized by category with before/after pairs

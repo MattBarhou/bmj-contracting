@@ -2,6 +2,25 @@ import { projects, projectCategories } from "@/data";
 import { HiArrowRight, HiPhone } from "react-icons/hi2";
 import ProjectsGallery from "@/components/ProjectsGallery";
 
+export const metadata = {
+  title: "Projects",
+  description:
+    "View BMJ Contracting project photos and before/after transformations. Renovations and commercial work completed across Vaughan & the GTA.",
+  alternates: { canonical: "/projects" },
+  openGraph: {
+    title: "BMJ Contracting Projects | Vaughan, Ontario",
+    description:
+      "Project photos and before/after transformations: kitchens, bathrooms, stairs, commercial spaces, and more across Vaughan & the GTA.",
+    images: [{ url: "/bmj_logo.png", alt: "BMJ Contracting logo" }],
+  },
+  twitter: {
+    title: "BMJ Contracting Projects | Vaughan, Ontario",
+    description:
+      "Project photos and before/after transformations: kitchens, bathrooms, stairs, commercial spaces, and more across Vaughan & the GTA.",
+    images: ["/bmj_logo.png"],
+  },
+};
+
 export default function ProjectsPage() {
   return (
     <div className="min-h-screen bg-base-100">

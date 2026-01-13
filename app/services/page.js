@@ -13,6 +13,25 @@ import {
   LuFence,
 } from "react-icons/lu";
 
+export const metadata = {
+  title: "Services",
+  description:
+    "Explore BMJ Contracting services in Vaughan & the GTA: kitchen renovations, bathroom renovations, plumbing, painting, electrical & lighting, tiling, basements, and outdoor projects.",
+  alternates: { canonical: "/services" },
+  openGraph: {
+    title: "Contracting Services in Vaughan, Ontario",
+    description:
+      "Kitchen renovations, bathroom renovations, plumbing, painting, electrical & lighting, tiling, basements, and outdoor projects across Vaughan & the GTA.",
+    images: [{ url: "/bmj_logo.png", alt: "BMJ Contracting logo" }],
+  },
+  twitter: {
+    title: "Contracting Services in Vaughan, Ontario",
+    description:
+      "Kitchen renovations, bathroom renovations, plumbing, painting, electrical & lighting, tiling, basements, and outdoor projects across Vaughan & the GTA.",
+    images: ["/bmj_logo.png"],
+  },
+};
+
 // Service icons mapping
 const serviceIcons = {
   1: <LuBath className="w-8 h-8" />, // Bathroom

@@ -3,7 +3,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { useState } from "react";
-import { HiPhone, HiBars3, HiXMark } from "react-icons/hi2";
+import { HiPhone, HiBars3, HiXMark, HiEnvelope } from "react-icons/hi2";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -56,7 +56,8 @@ export default function Navbar() {
               href="mailto:info@bmjcontracting.ca?subject=Quote Request"
               className="btn btn-primary btn-sm"
             >
-              Get a Quote
+              <HiEnvelope className="w-5 h-5" />
+              Email Us
             </Link>
           </div>
 
@@ -97,11 +98,12 @@ export default function Navbar() {
                   (416) 219-4163
                 </a>
                 <Link
-                  href="/contact"
+                  href="mailto:info@bmjcontracting.ca?subject=Quote Request"
                   onClick={() => setIsOpen(false)}
                   className="btn btn-primary btn-block"
                 >
-                  Get a Quote
+                  Email Us
+                  <HiEnvelope className="w-5 h-5" />
                 </Link>
               </div>
             </div>
